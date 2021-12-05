@@ -1082,7 +1082,7 @@ fn as_num(o: &Object) -> f64 {
     match o {
         &Object::Integer(i) => { i as f64 }
         &Object::Real(f) => { f }
-        _ => { panic!("not a number") }
+        _ => { 0.0 }
     }
 }
 
